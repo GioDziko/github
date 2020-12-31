@@ -1,0 +1,99 @@
+.searchedUsers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.searchedUsers img{
+    width: 30%;
+}
+.searchedUsers-info{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 80%;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.info-container span{
+    display: block;
+    color: rgba(0, 0, 0, 0.76);
+}
+.home-link {
+    text-decoration: none;
+    color: #3498db;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home-btn-container{
+    text-align: center;
+}
+.home-btn{
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    color: #3498db;
+    transition: .6s;
+    position: relative;
+    overflow: hidden;
+}
+.home-btn:hover .home-link{
+    color: #ffffff;
+}
+.home-btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #3498db;
+    z-index: -1;
+    transition: .8s;
+    top: 0;
+    border-radius: 0 0 50% 50% ;
+}
+.home-btn:hover::before{
+    height: 180%;
+}
+.error{
+    color: red;
+    font-size: xx-large;
+}
+.not-exist{
+    margin-top: 10px;
+    font-size:large;
+    font-weight: bold;
+}
+.error-btn{
+    margin-top: 30px;
+}
+.most-important-user{
+    margin: 20px 0 ;
+    font-weight: bold;
+}
+@media (max-width:770px){
+    .searchedUsers img{
+        width: 70%;
+    }
+    .searchedUsers{
+        font-size: small;
+    }
+    .info-container{
+        font-size: medium;
+    }
+}

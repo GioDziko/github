@@ -1,0 +1,25 @@
+.followers-container{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+}
+
+.followers-container img{
+    width: 70%;
+    border-radius: 5px;
+}
+.followers-container a {
+    text-decoration: none;
+    color: blue;
+}
+.followers-container p{
+    font-weight: bold;
+}
+.followers-container span{
+    display: block;
+    color: rgba(0, 0, 0, 0.76);
+}

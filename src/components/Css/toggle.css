@@ -1,0 +1,32 @@
+
+.checkbox{
+    opacity: 0;
+}
+
+.label{
+    width: 50px;
+    height: 26px;
+    background-color: rgb(13, 148, 13);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    position: relative;
+}
+.ball{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(28px);
+}
+.icon_1{
+    color: white;
+}
+.icon_2{
+    color: white;
+}
